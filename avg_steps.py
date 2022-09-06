@@ -7,8 +7,6 @@ def main():
     next(csvfile)
     outfile.write('Month, Average Steps\n')
 
-    months=['January','February','March','April','May','June','July','August','September','October','Novemeber','December']
-
     JanDays=0
     JanTotal=0
     FebDays=0
