@@ -36,52 +36,51 @@ def main():
         if int(line[0]) == 1:
             JanTotal+=int(line[1])
             JanDays+=1
+            JanAvg = JanTotal/JanDays
         elif int(line[0]) == 2:
             FebTotal+=int(line[1])
             FebDays+=1
+            FebAvg = FebTotal/FebDays
         elif int(line[0]) == 3:
             MarTotal+=int(line[1])
             MarDays+=1
+            MarAvg = MarTotal/MarDays
         elif int(line[0]) == 4:
             AprTotal+=int(line[1])
             AprDays+=1
+            AprAvg = AprTotal/AprDays
         elif int(line[0]) == 5:
             MayTotal+=int(line[1])
             MayDays+=1
+            MayAvg = MayTotal/MayDays
         elif int(line[0]) == 6:
             JuneTotal+=int(line[1])
             JuneDays+=1
+            JuneAvg = JuneTotal/JuneDays
         elif int(line[0]) == 7:
             JulyTotal+=int(line[1])
             JulyDays+=1
+            JulyAvg = JulyTotal/JulyDays
         elif int(line[0]) == 8:
             AugTotal+=int(line[1])
             AugDays+=1
+            AugAvg = AugTotal/AugDays
         elif int(line[0]) == 9:
             SepTotal+=int(line[1])
             SepDays+=1
+            SepAvg = SepTotal/SepDays
         elif int(line[0]) == 10:
             OctTotal+=int(line[1])
             OctDays+=1
+            OctAvg = OctTotal/OctDays
         elif int(line[0]) == 11:
             NovTotal+=int(line[1])
             NovDays+=1
+            NovAvg = NovTotal/NovDays
         elif int(line[0]) == 12:
             DecTotal+=int(line[1])
             DecDays+=1
-
-    JanAvg = JanTotal/JanDays
-    FebAvg = FebTotal/FebDays
-    MarAvg = MarTotal/MarDays
-    AprAvg = AprTotal/AprDays
-    MayAvg = MayTotal/MayDays
-    JuneAvg = JuneTotal/JuneDays
-    JulyAvg = JulyTotal/JulyDays
-    AugAvg = AugTotal/AugDays
-    SepAvg = SepTotal/SepDays
-    OctAvg = OctTotal/OctDays
-    NovAvg = NovTotal/NovDays
-    DecAvg = DecTotal/DecDays
+            DecAvg = DecTotal/DecDays
 
     outfile.write('January, ' + format(JanAvg,'.2f') + '\n')
     outfile.write('February, ' + format(FebAvg,'.2f') + '\n')
